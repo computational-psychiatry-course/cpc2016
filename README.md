@@ -2,7 +2,7 @@
 
 This is the official Git repository for the Computational Psychiatry Course 2016 organized by the Translational Neuromodeling Unit at ETH and University of Zurich.   
 See our official website for more details:   
-http://www.translationalneuromodeling.org/cpcourse/
+http://www.translationalneuromodeling.org/cpcourse/  
 and for past courses visit:   
 https://www.tnu.ethz.ch/de/teaching/cpcourse.html
 
