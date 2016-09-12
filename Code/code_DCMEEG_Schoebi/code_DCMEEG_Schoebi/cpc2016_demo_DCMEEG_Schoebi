@@ -1,0 +1,43 @@
+%% This Script creates a dummy input for spm_gen_erp runs it and plots the results.
+%  Its purpose is to simulate the behavior of two harmonic oscillator, 
+%  depending on the input
+%
+%   'noS_noF_noU_noA'       no Spring, no Friction, no Input, no Connection
+%   'noF_noU_noA'           yes Spring, no Friction, no Input, no
+%                           Connection
+%   'F_noU_noA'             yes Spring, yes Friction, no Input, no
+%                           Connection
+%   'F_U_noA'               yes Spring, yes Friction, yes Input, no
+%                           Connection
+%   'F_U_A'                 yes Spring, yes Friction, yes Input, yes
+%                           Connection
+% 
+% The dynamics of the oscillator is mimicked by spm_gen_erp. The functions
+%    spm_fx_erp_cp16 and 
+%    spm_int_L_cp16 
+%    spm_gen_erp_cp16
+% are slighly adjusted versions of the SPM12 standards, for the purpose of
+% demonstration. 
+%
+% dschoebi@biomed.ee.ethz.ch
+% copyright (C) 2016 
+
+
+
+[P, M, U] = ho_pars('noF_noU_noA');
+[y, u] = spm_gen_erp_cp16(P, M, U);
+    
+%%---------------------Plotting----------------------------------------
+figure(1)
+    
+yball1 = y{1}(:, 1);
+yball2 = y{1}(:, 2);
+x = linspace(0, 5, length(yball1));
+
+plot(x, yball1, 'LineWidth', 4, 'Color', [0.4, 0.4, 0]); hold on;
+plot(x, yball2, 'LineWidth', 4, 'Color', [0.4, 0, 0.4]);
+%plot(x, u.u, '-r');
+ylabel('Amplitude', 'FontSize', 14)
+xlabel('Time', 'FontSize', 14)
+legend('Ball 1', ...
+    'Ball 2')
