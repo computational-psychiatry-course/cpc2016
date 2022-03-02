@@ -1,10 +1,7 @@
-# README #
+## CPC 2016
 
-This is the official Git repository for the Computational Psychiatry Course 2016 organized by the Translational Neuromodeling Unit at ETH and University of Zurich.   
-See our official website for more details:   
-http://www.translationalneuromodeling.org/cpcourse/  
-and for past courses visit:   
-https://www.tnu.ethz.ch/de/teaching/cpcourse.html
+This is the official Git repository for the Computational Psychiatry Course 2016 organized by the Translational Neuromodeling Unit (TNU), an instutition from the University of Zurich and ETH Zurich.   
+See our [official website](http://www.translationalneuromodeling.org/cpcourse/) for more details. For past courses visit the [TNU webpage](https://www.tnu.ethz.ch/de/teaching/cpcourse.html).
 
 ### What is this repository for? ###
 
